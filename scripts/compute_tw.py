@@ -21,7 +21,7 @@ from collections import defaultdict
 from datetime import date, timedelta
 
 DATA = r"C:\Users\Tr7\Trades\Data"
-END_HOLDINGS = {"2308"}   # update when the real portfolio changes
+END_HOLDINGS = {"2308", "3661"}   # update when the real portfolio changes
 
 prices = json.load(open(rf"{DATA}\prices_tw.json"))
 rows = list(csv.DictReader(open(rf"{DATA}\TW.csv", encoding="utf-8-sig")))
